@@ -1,0 +1,199 @@
+:root {
+
+    --ff-heading: font-family: 'Inter', sans-serif;
+    --ff-large-title: font-family: 'Inter', sans-serif;
+    --ff-small-title: font-family: 'Roboto Condensed', sans-serif;
+
+    --bg-color-header: #30343F;
+    --bg-color-about: #FFFFFF;
+    --bg-color-services: #66736C;
+    --bg-color-products: #FFFFFF;
+    --bg-color-address: #66736C;
+    --bg-color-footer: #30343F;
+
+    --bg-color-button: #30343F;
+    --ct-color-button: #FFFFFF;
+
+    --ct-heading: #30343F;
+    --ct-headings: #1E2749;
+    --ct-titles-services: #30343F;
+    --ct-titles-products: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100px;
+    background: var(--bg-color-header);
+}
+
+.page {
+    max-width: 380px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.header ul {
+    display: flex;
+    gap: 10px;
+}
+
+.header li {
+    list-style-type: none;
+}
+
+.header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+#about {
+    background: var(--bg-color-about);
+    height: 256px;
+}
+
+.about h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+
+    color: var(--ct-heading);
+    
+    padding: 55px 0 20px 40px;
+}
+
+.about h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+    color: var(--ct-heading);
+
+    padding-left: 40px;
+}
+
+#services {
+    background: var(--bg-color-services);
+    height: 1296px;
+    padding: 50px 0;
+}
+
+.cards-services {
+    width: 240px;
+    height: 345px;
+    background: #FFFFFF;
+
+    border-radius: 10px;
+    margin: 0 auto 50px;
+
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+}
+
+.cards-services h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ct-heading);
+
+    padding: 30px 20px;
+
+    text-align: center;
+}
+
+.services img {
+    width: 240px;
+    height: 240px;
+    border-radius: 0 0 10px 10px;
+}
+
+.budget a, .budget p {
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.budget a:hover {
+    text-decoration: underline;
+}
+
+#products {
+    padding-bottom: 50px;
+}
+
+.products h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+
+    color: var(--ct-headings);
+
+    padding: 50px 0 50px;
+    text-align: center;
+}
+
+.cards-products {
+    width: 240px;
+    height: 340px;
+
+    margin: 0 auto 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+}
+
+.cards-products img {
+    width: 240px;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cards-products h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    line-height: 18.75px;
+
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards-products a {
+    text-decoration: none;
+
+    background: var(--bg-color-button);
+    color: var(--ct-color-button);
+
+    padding: 10px 27px;
+    border-radius: 10px;
+}
+
+.cards-products p {
+    text-align: center;
+}
+
+.catalog a, .catalog p {
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000000;
+
+    text-align: center;
+}
+
+.catalog a:hover {
+    text-decoration: underline;
+}
