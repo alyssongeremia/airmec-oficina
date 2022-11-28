@@ -276,11 +276,10 @@ header {
 }
 
 #whatsapp img {
-    width: 40px;
+    width: 50px;
     position: fixed;
     bottom: 30px;
-    right: 3px;
-    opacity: 75%;
+    right: 5px;
 }
 
 #location {
