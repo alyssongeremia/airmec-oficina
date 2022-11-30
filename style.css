@@ -115,8 +115,8 @@ header {
 
 #services {
     background: var(--bg-color-services);
-    height: 1296px;
-    padding: 30px 0 30px;
+    height: 1375px;
+    padding: 50px 0 50px;
 }
 
 #title-services {
@@ -126,7 +126,7 @@ header {
     color: #FFFFFF;
 
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
 }
 
 .cards-services {
@@ -359,4 +359,111 @@ footer span p {
     padding-top: 20px;
 
     text-align: center;
+}
+
+
+
+
+
+@media(min-width: 870px) {
+    .page {
+        max-width: 1000px;
+    }
+
+    #about {
+        height: 300px;
+        display: flex;
+        align-items: center;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .about h2 {
+        font-size: 14px;
+        padding: 0 0 20px 0;
+    }
+
+    .about h1 {
+        font-size: 24px;
+        padding: 0 0 20px 0;
+    }
+
+    .about img {
+        width: 342px;
+        height: 205px;
+    }
+
+    .about a {
+        font-size: 16px;
+        padding: 10px 25px;
+        margin: 0;
+    }
+
+    #services {
+        height: 600px;
+    }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    #title-services {
+        font-size: 24px;
+    }
+
+    .cards-services {
+        margin: 0 0 50px 0;
+    }
+
+    .budget a {
+        font-size: 20px;
+    }
+
+    .products h1 {
+        font-size: 24px;
+    }
+
+    .products-wrapper {
+        display: grid;
+        grid-template-areas: "A B C" "D E F";
+    }
+
+    .catalog a {
+        font-size: 20px;
+    }
+
+    .rubber-wrapper {
+        display: flex;
+    }
+
+    #location {
+        height: 800px;
+    }
+
+    #location h1 {
+        font-size: 24px;
+    }
+
+    .maps-wrapper {
+        max-width: 800px;
+        height: 592px;
+    }
+
+    #whatsapp img {
+        width: 55px;
+        bottom: 40px;
+        right: 15px;
+    }
+
+    #whatsapp img:hover {
+        transform: scale(1.2);
+    }
 }
