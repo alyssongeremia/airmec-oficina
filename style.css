@@ -97,11 +97,12 @@ header {
     padding: 5px 20px;
     margin-left: 40px;
 
+    transition: all .3s;
+
 }
 
 .about a:hover {
     background: #db5461;
-    color: #FFFFFF;
 }
 
 .image-garage {
@@ -371,7 +372,7 @@ footer span p {
     }
 
     #about {
-        height: 300px;
+        height: 400px;
         display: flex;
         align-items: center;
     }
@@ -453,7 +454,7 @@ footer span p {
     }
 
     .maps-wrapper {
-        max-width: 800px;
+        max-width: 75%;
         height: 592px;
     }
 
@@ -461,6 +462,8 @@ footer span p {
         width: 55px;
         bottom: 40px;
         right: 15px;
+
+        transition: all .2s;
     }
 
     #whatsapp img:hover {
