@@ -4,19 +4,19 @@
     --ff-large-title: font-family: 'Inter', sans-serif;
     --ff-small-title: font-family: 'Roboto Condensed', sans-serif;
 
-    --bg-color-header: #30343F;
+    --bg-color-header: #212529;
     --bg-color-about: #FFFFFF;
-    --bg-color-services: #66736C;
+    --bg-color-services: #2B3035 ;
     --bg-color-products: #FFFFFF;
-    --bg-color-address: #66736C;
-    --bg-color-footer: #30343F;
+    --bg-color-address: #2B3035 ;
+    --bg-color-footer: #363c42;
 
-    --bg-color-button: #30343F;
+    --bg-color-button: #2B3035;
     --ct-color-button: #FFFFFF;
 
-    --ct-heading: #30343F;
+    --ct-heading: #1F1F24;
     --ct-headings: #1E2749;
-    --ct-titles-services: #30343F;
+    --ct-titles-services: #1F1F24;
     --ct-titles-products: #000000;
 }
 
@@ -29,6 +29,11 @@
 header {
     height: 100px;
     background: var(--bg-color-header);
+}
+
+header img {
+    width: 100px;
+    height: 100px;
 }
 
 .page {
