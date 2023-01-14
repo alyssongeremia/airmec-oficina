@@ -121,7 +121,6 @@ header img {
 
 #services {
     background: var(--bg-color-services);
-    height: 1375px;
     padding: 50px 0 50px;
 }
 
@@ -169,7 +168,12 @@ header img {
     border-radius: 0 0 10px 10px;
 }
 
-.budget a, .budget p {
+.budget {
+    max-width: 250px;
+    margin: auto;
+}
+
+.budget a {
     text-decoration: none;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
@@ -183,6 +187,8 @@ header img {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: transform .3s;
 }
 
 .budget svg {
@@ -191,7 +197,7 @@ header img {
 }
 
 .budget a:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 #products {
@@ -225,10 +231,6 @@ header img {
     
 }
 
-.cards-products:hover {
-    transform: scale(1.05);
-}
-
 .cards-products img {
     width: 240px;
     padding: 25px;
@@ -260,6 +262,8 @@ header img {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: transform .3s;
 }
 
 .cards-products a svg {
@@ -270,10 +274,16 @@ header img {
 
 .cards-products a:hover {
     background: #15161b;
+    transform: scale(1.05);
 }
 
 .cards-products p {
     text-align: center;
+}
+
+.catalog {
+    max-width: 250px;
+    margin: auto;
 }
 
 .catalog a, .catalog p {
@@ -288,6 +298,8 @@ header img {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: transform .3s;
 }
 
 .catalog svg {
@@ -296,7 +308,7 @@ header img {
 }
 
 .catalog a:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 #whatsapp img {
@@ -351,7 +363,7 @@ footer img {
 
 footer p {
     font-family: 'Inter', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     color: #FFFFFF;
 
     padding: 0 0 10px 40px
@@ -367,6 +379,26 @@ footer span p {
     text-align: center;
 }
 
+@media(min-width: 600px) {
+    .page {
+        min-width: 550px;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .products-wrapper {
+        display: grid;
+        grid-template-areas: "A B" "C D" "E F";
+    }
+
+    .rubber-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 
 
@@ -472,6 +504,6 @@ footer span p {
     }
 
     #whatsapp img:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }
