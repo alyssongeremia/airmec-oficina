@@ -1,10 +1,10 @@
 :root {
 
-    --ff-heading: font-family: 'Inter', sans-serif;
-    --ff-large-title: font-family: 'Inter', sans-serif;
-    --ff-small-title: font-family: 'Roboto Condensed', sans-serif;
+    --ff-heading: 'Inter', sans-serif;
+    --ff-large-title: 'Inter', sans-serif;
+    --ff-small-title: 'Roboto Condensed', sans-serif;
 
-    --bg-color-header: #212529;
+    --bg-color-header: #363C42;
     --bg-color-about: #FFFFFF;
     --bg-color-services: #2B3035 ;
     --bg-color-products: #FFFFFF;
@@ -26,6 +26,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--ff-heading);
+}
+
 header {
     height: 100px;
     background: var(--bg-color-header);
@@ -45,12 +49,13 @@ header img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     padding: 0 10px;
 }
 
 .header ul {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .header li {
@@ -406,6 +411,25 @@ footer span p {
 @media(min-width: 870px) {
     .page {
         max-width: 1000px;
+    }
+
+    .banner {
+        height: 50px;
+        background: #4C5264;
+
+        display: flex;
+    }
+
+    .info-banner a {
+        text-decoration: none;
+        color: white;
+
+        padding: 3px 8px;
+        background: var(--bg-color-header);
+    }
+
+    .info-banner p {
+        color: white;
     }
 
     #about {
