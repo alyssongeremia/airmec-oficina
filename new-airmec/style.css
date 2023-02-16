@@ -88,7 +88,7 @@ header {
 
 header img {
     width: 80px;
-    height: 80px;
+    height: 79px;
 }
 
 .hamburguer {
@@ -111,11 +111,11 @@ header img {
     text-decoration: none;
     color: #FFFFFF;
 
-    transition: .3s ease;
+    transition: .3s;
 }
 
 .menu a:hover {
-    color: #dcdada;
+    color: #aeacac;
 }
 
 .hidden {
@@ -127,7 +127,7 @@ main .about-wrapper {
 }
 
 main .about .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color: var(--ct-about);
 
@@ -135,7 +135,7 @@ main .about .subtitle {
 }
 
 main .about .title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     color: var(--ct-about);
 
@@ -149,8 +149,12 @@ main .about img {
     padding: 1.5rem 0 1.5rem;
 }
 
+main .services-wrapper {
+    background: var(--bg-services);
+}
+
 main .services .titles {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: var(--ct-heading-services);
 
@@ -179,6 +183,10 @@ main .cards-services h1 {
     text-align: center;
 }
 
+main .products-wrapper {
+    background: #9c9c9e;
+}
+
 main .products .title-products {
     display: flex;
     align-items: center;
@@ -188,7 +196,7 @@ main .products .title-products {
 }
 
 main .products .title-products h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #000000;
 
@@ -197,23 +205,34 @@ main .products .title-products h1 {
 
 main .products .title-products a {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 500;
     color: var(--ct-links-products);
+
 }
 
 main .products .cards-products {
+    max-width: 35rem;
     display: flex;
 
-    padding-bottom: 3rem;
+    
+
+    margin: 0 auto 3rem;
+}
+
+main .products .cards-products img {
+    width: 12rem;
+    height: 12rem;
 }
 
 main .products .info-cards {
-    padding-left: 1.4rem;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 0.5rem;
 }
 
 main .products .info-cards h1 {
-    width: 17rem;
     font-size: 1.4rem;
     font-weight: bold;
     color: var(--ct-title-products);
@@ -225,6 +244,7 @@ main .products .info-cards span {
     font-size: 1.6rem;
     font-weight: bold;
     color: var(--ct-price-products);
+    margin-bottom: 1rem;
 }
 
 
@@ -274,7 +294,7 @@ main .products .info-cards span {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 45vw;
+        width: 55vw;
 
         height: 100vh;
         background: var(--bg-header);
@@ -291,10 +311,35 @@ main .products .info-cards span {
     .active {
         right: 0;
     }
+
+    .menu a {
+        font-size: 1.8rem;
+    }
 }
 
-@media(min-width: 520px) {
+@media(min-width: 350px) {
     .page {
-        width: 520px;
+        width: 350px;
+    }
+}
+
+@media(min-width: 700px) {
+    .page {
+        width: 690px;
+    }
+
+    .navbar {
+        padding: 0 1rem;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4rem;
+    }
+
+    .cards-services-wrapper {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
