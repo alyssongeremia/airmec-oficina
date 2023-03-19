@@ -3,6 +3,8 @@
     --bg-subheader: #F5F5F5;
     --bg-about: #1D3248;
     --bg-services: #1D3248;
+    --bg-products: #F5F5F5;
+    --bg-cards-services: #FFFFFF;
     --bg-buttons: #FFA630;
     --bg-buttons-products: #243e5a;
 
@@ -114,3 +116,97 @@ ul {
         translate: 0;
     }
 }
+
+.about {
+    background: var(--bg-about);
+    color: var(--color-text);
+}
+
+#location-about {
+    display: flex;
+    align-items: center;
+
+    padding: 4rem 0 2.5rem 0;
+}
+
+.about span {
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    margin-left: 3px;
+}
+
+.about h1 {
+    font-size: 1.8rem;
+    margin-left: .5rem;
+}
+
+.img-about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.services {
+    background: var(--bg-services);
+    color: var(--color-text);
+}
+
+.services span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 2.5rem 0 0 .5rem;
+}
+
+.services h1 {
+    font-size: 1.8rem;
+    padding: 2.5rem 0 2.5rem .5rem;
+}
+
+.cards-wrapper {
+    display: flex;
+    gap: 3px;
+
+    text-align: center;
+
+    overflow: auto;
+    padding: 0 1rem 4rem 0;
+}
+
+.cards {
+    width: 13.7rem;
+    background: var(--bg-cards-services);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 2px;
+    margin-left: 1rem;
+    border-radius: 3px;
+}
+
+.cards h1 {
+    font-size: 1.3rem;
+    color: #1D3248;
+    padding-left: 0;
+}
+
+.products {
+    background: var(--bg-products);
+    padding: 3rem  .2rem 3rem;
+}
+
+.img-products-oficinas {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.img-products-oficinas img {
+    width: 30rem;
+    display: block;
+    margin: auto;
+}
+
+
