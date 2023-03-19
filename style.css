@@ -20,6 +20,10 @@
 }
 
 .hidden {
+    visibility: hidden;
+}
+
+.hidden-none {
     display: none;
 }
 
@@ -74,4 +78,39 @@ header {
 
 .hamburguer {
     margin-top: 15px;
+}
+
+.menu {
+    width: 100%;
+    height: 5.6rem;
+
+    background: #1D3248;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+@keyframes to-rigth {
+    from{
+        translate: -100px;
+    }
+
+    to{
+        translate: 0;
+    }
 }
