@@ -59,8 +59,7 @@ body {
     color: var(--color-text);
     background: var(--bg-about);
 
-    padding: .5rem;
-    margin-right: 1.5rem;
+    padding: .9rem;
     border-radius: .3rem;
 }
 
@@ -96,6 +95,8 @@ header {
     top: 0;
     left: 0;
 
+    box-shadow: inset 0px 3px 8px -2px rgba(0,0,0,0.44);
+
 }
 
 ul {
@@ -126,75 +127,91 @@ ul {
     display: flex;
     align-items: center;
 
-    padding: 4rem 0 2.5rem 0;
+    padding: 4rem 0 0 0;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about span {
     font-size: 1.2rem;
-    font-weight: 500;
-
-    margin-left: 3px;
+    margin-left: 4px;
 }
 
 .about h1 {
-    font-size: 1.8rem;
-    margin-left: .5rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 1px;
+
+    padding-top: 5.5rem;
 }
 
 .img-about {
-    width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.about img {
+    width: 28.7rem;
 }
 
 .services {
     background: var(--bg-services);
     color: var(--color-text);
+
+    text-align: center;
+}
+
+.hand-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .services span {
-    font-size: 1.4rem;
-    font-weight: 500;
-    padding: 2.5rem 0 0 .5rem;
+    font-size: 1.2rem;
+    margin-left: .6rem;
 }
 
 .services h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 2.5rem 0 2.5rem .5rem;
 }
 
 .cards-wrapper {
     display: flex;
-    gap: 3px;
-
-    text-align: center;
+    gap: 10px;
 
     overflow: auto;
-    padding: 0 1rem 4rem 0;
+
+    padding: 3.5rem 1rem 4rem 0;
 }
 
 .cards {
-    width: 13.7rem;
     background: var(--bg-cards-services);
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
 
-    padding: 2px;
-    margin-left: 1rem;
+    padding: 3px;
+
     border-radius: 3px;
 }
 
 .cards h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     color: #1D3248;
-    padding-left: 0;
 }
 
 .products {
     background: var(--bg-products);
-    padding: 3rem  .2rem 3rem;
+    padding: 3rem .2rem 3rem;
 }
 
 .img-products-oficinas {
