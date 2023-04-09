@@ -4,7 +4,7 @@
     --bg-about: #1D3248;
     --bg-services: #1D3248;
     --bg-products: #F5F5F5;
-    --bg-cards-services: #FFFFFF;
+    --bg-cards-services: #233D58;
     --bg-buttons: #FFA630;
     --bg-buttons-products: #243e5a;
 
@@ -164,6 +164,7 @@ ul {
     color: var(--color-text);
 
     text-align: center;
+    padding-bottom: 2.5rem;
 }
 
 .hand-wrapper {
@@ -183,47 +184,41 @@ ul {
 }
 
 .cards-wrapper {
+    width: 100%;
+    padding-top: 3rem;
+
     display: flex;
-    gap: 10px;
+    gap: 16px;
 
     overflow: auto;
-
-    padding: 3.5rem 1rem 4rem 0;
 }
 
 .cards {
+    min-width: 28rem;
+
     background: var(--bg-cards-services);
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 3px;
 
     border-radius: 3px;
 }
 
-.cards h1 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #1D3248;
-}
+.whats-services {
+    height: 5.4rem;
 
-.products {
-    background: var(--bg-products);
-    padding: 3rem .2rem 3rem;
-}
-
-.img-products-oficinas {
     display: flex;
-    flex-direction: column;
-    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: #329F5B;
+
+    margin: 2.5rem;
+    border-radius: 5px;
+
 }
 
-.img-products-oficinas img {
-    width: 30rem;
-    display: block;
-    margin: auto;
+.whats-services a {
+    text-decoration: none;
+    color: #F5F5F5;
 }
 
 
